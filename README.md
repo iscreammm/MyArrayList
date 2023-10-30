@@ -11,4 +11,4 @@
 7. .idea не должно быть в репозитории.
 
 # Покрытие тестами
-![image](https://github.com/iscreammm/MyArrayList/assets/91844024/353586de-0af7-49d1-bae5-4af2742d0570)
+![image](https://github.com/iscreammm/MyArrayList/assets/91844024/10982b41-06b8-4df9-8047-acd705ac7e36)
