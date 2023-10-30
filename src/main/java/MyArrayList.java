@@ -54,7 +54,9 @@ public class MyArrayList<E> {
      * @throws IndexOutOfBoundsException if index is out of range ({@code index < 0 || index >= size}).
      */
     public void add(int index, E element) {
-        checkIndex(index);
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("Index out of range");
+        }
 
         if (isFull()) {
             changeCapacity();

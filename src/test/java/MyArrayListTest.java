@@ -44,6 +44,17 @@ public class MyArrayListTest {
         assertEquals(size + values.length * 2L, list.size());
     }
 
+    @Test
+    public void addWithIndexToEmptyListTest() {
+        MyArrayList<Integer> emptyList = new MyArrayList<>();
+
+        for (int i = 0; i < values.length; i++) {
+            emptyList.add(i, values[i]);
+        }
+
+        assertEquals(values.length, emptyList.size());
+    }
+
     @Test(expected = IndexOutOfBoundsException.class)
     public void addNegativeIndexTest() {
         list.add(-1, values[0]);
@@ -51,7 +62,7 @@ public class MyArrayListTest {
 
     @Test(expected = IndexOutOfBoundsException.class)
     public void addIndexOutOfBoundsTest() {
-        list.add(11, values[0]);
+        list.add(12, values[0]);
     }
 
     @Test
